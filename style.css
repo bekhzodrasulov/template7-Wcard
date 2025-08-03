@@ -1,0 +1,463 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Regular.woff2") format("woff2"),
+    url("DancingScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Bold.woff2") format("woff2"),
+    url("DancingScript-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Medium.woff2") format("woff2"),
+    url("DancingScript-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-SemiBold.woff2") format("woff2"),
+    url("DancingScript-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap");
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-BoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Bold.woff2") format("woff2"),
+    url("LibertinusSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Italic.woff2") format("woff2"),
+    url("LibertinusSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBold.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Regular.woff2") format("woff2"),
+    url("LibertinusSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marck Script";
+  src: url("MarckScript-Regular.woff2") format("woff2"),
+    url("MarckScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.invitation {
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
+  padding: 0 0 0 0;
+}
+
+.column {
+  background: #ffffff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+section {
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.save-date {
+  background: #fff;
+}
+
+.header-date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  padding-right: 20px;
+}
+
+.header-date .date-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.header-date .date-time {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  font-size: 50px;
+  color: #ccc;
+}
+
+.header-photo {
+  width: 310px;
+  height: 450px;
+  margin-top: 80px;
+  border-top-right-radius: 100px;
+}
+
+.forth-photo {
+  width: 370px;
+  height: 310px;
+  margin-top: 50px;
+  border-bottom-right-radius: 100px;
+}
+
+.second-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+.second-photo {
+  width: 310px;
+  height: 450px;
+  border-top-left-radius: 150px;
+}
+
+.letters {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+.scroll-hint {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.message-block {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.message-block h2 {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.message-block p {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+.section-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.location {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.music-control {
+  margin: 30px 0;
+}
+
+#playButton {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+
+.countdown {
+  display: flex;
+  gap: 30px;
+}
+
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.countdown p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.calendar p {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.calendar table {
+  border-collapse: separate;
+  border-spacing: 10px 10px; /* горизонталь, вертикаль */
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.calendar th,
+.calendar td {
+  font-family: "Dancing Script", cursive;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.calendar-date {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid red;
+  border-radius: 50%;
+}
+
+.timing {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.restaurant-name {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+}
+
+.btn-location {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  width: 120px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.btn-location:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.last-photo {
+  width: 100%;
+  height: 550px;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+  will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Текст: сверху вниз */
+.fade-down {
+  transform: translateY(-40px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 390px) {
+  .header-date {
+    margin-top: 120px;
+    padding-right: 25px;
+  }
+  .header-date .date-text {
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+  }
+
+  .header-date .date-time {
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+    font-size: 50px;
+    color: #ccc;
+  }
+
+  .header-photo {
+    width: 280px;
+    height: 400px;
+    margin-top: 50px;
+    border-top-right-radius: 100px;
+  }
+
+  .second-photo {
+    width: 280px;
+    height: 400px;
+    border-top-left-radius: 100px;
+  }
+
+  .forth-photo {
+    width: 310px;
+    height: 250px;
+    margin-top: 50px;
+    border-bottom-right-radius: 100px;
+  }
+  .last-photo {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-date {
+    padding-right: 20px;
+  }
+  .second-container {
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akbarjon & Mushtariybegim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="MarckScript-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="LibertinusSerif-BoldItalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script>
+      // Блокировать правый клик
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Блокировать F12 и другие клавиши
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "I" || e.key === "J" || e.key === "C")) ||
+          (e.ctrlKey && e.key === "U") ||
+          (e.shiftKey && e.ctrlKey && e.key === "J")
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="invitation">
+        <section class="save-date">
+          <div class="header-container">
+            <img
+              src="images/akbarake1.webp"
+              alt="Couple"
+              class="header-photo animate slide-left"
+            />
+            <div class="header-date animate slide-right">
+              <div class="date-text">save</div>
+              <div class="date-time">24</div>
+              <div class="date-text">the</div>
+              <div class="date-time">08</div>
+              <div class="date-text">date</div>
+              <div class="date-time">25</div>
+            </div>
+          </div>
+          <div class="music-control animate fade-down">
+            <button id="playButton">
+              <img
+                style="height: 50px"
+                id="playIcon"
+                src="images/play.png"
+                alt="Play"
+              />
+            </button>
+            <audio
+              id="bgMusic"
+              src="Olexandr Ignatov - Moments (Official Audio)(MP3_160K).mp3"
+            ></audio>
+          </div>
+          <div class="scroll-hint">Листайте вниз ↓</div>
+        </section>
+
+        <section class="message-block column animate fade-up">
+          <h2>Дорогой наш гость!</h2>
+          <p>
+            С любовью и благодарностью в сердцах приглашаем вас разделить с нами
+            самый значимый день нашей жизни - начало нашей вечной истории!
+            <br /><br />
+            Будем искренне рады видеть вас рядом в этот особенный и
+            благословенный момент.
+          </p>
+          <hr />
+          <p>С уважением, <br />Акбаржон и Муштарийбегим</p>
+        </section>
+
+        <section class="save-date">
+          <div class="second-container">
+            <h1 calssName="fristWords animate slide-left">
+              <span class="letters animate fade-up">A</span>
+              <br /><img
+                style="height: 30px"
+                src="images/vs.png"
+                alt="and"
+              /><br /><span class="letters animate fade-down">M</span>
+            </h1>
+            <img
+              src="images/akbarake2.webp"
+              alt="Couple 2"
+              class="second-photo animate slide-right"
+            />
+          </div>
+          <div>
+            <div class="countdown-container">
+              <div class="countdown">
+                <div class="animate slide-left">
+                  <span id="days">0</span>
+                  <p class="days-text">дней</p>
+                </div>
+                <div class="animate fade-up">
+                  <span id="hours">0</span>
+                  <p class="hours-text">часов</p>
+                </div>
+                <div class="animate fade-down">
+                  <span id="minutes">0</span>
+                  <p class="minutes-text">минут</p>
+                </div>
+                <div class="animate slide-right">
+                  <span id="seconds">0</span>
+                  <p class="seconds-text">секунд</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="timing">timing</h3>
+          </div>
+        </section>
+
+        <section class="save-date column">
+          <img
+            src="images/akbarake3.webp"
+            alt="Couple 2"
+            class="third-photo animate fade-up"
+            style="width: 100%; height: 280px"
+          />
+          <div class="calendar animate fade-down">
+            <p>Август</p>
+            <table>
+              <tr>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+                <th>Вс</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td class="highlight" `>24</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </table>
+          </div>
+          <div class="calendar-date">date</div>
+        </section>
+
+        <section
+          class="save-date column animate slide-right"
+          style="margin: 20px 0"
+        >
+          <img
+            src="images/akbarake6.webp"
+            alt="Couple 2"
+            class="third-photo animate slide-right"
+            style="width: 100%; height: 280px"
+          />
+        </section>
+
+        <section
+          class="section-dark column animate fade-down"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <h3
+            style="
+              font-size: 20px;
+              text-transform: uppercase;
+              font-family: 'Libertinus Serif';
+              font-weight: normal;
+              font-style: italic;
+            "
+          >
+            Ресторан
+          </h3>
+          <h2 class="restaurant-name">“Sarbon”</h2>
+          <p class="location">Жуйдам ул.Фаргона, 27В<br />г.Фергана</p>
+          <a href="https://yandex.uz/maps/-/CHd4iXZE"
+            ><img
+              style="width: 50px; height: 50px"
+              src="images/location-svgrepo-com.svg"
+              alt="Location"
+          /></a>
+          <a class="btn-location" href="https://yandex.uz/maps/-/CHd4iXZE">
+            Локация
+          </a>
+          <p
+            style="
+              font-family: 'Libertinus Serif';
+              font-style: italic;
+              font-weight: normal;
+            "
+          >
+            Мы ждём вас <br />24 августа 17:00
+          </p>
+        </section>
+
+        <section class="save-date column animate fade-up">
+          <img
+            src="images/akbarake5.webp"
+            alt="Couple 2"
+            class="last-photo animate fade-up"
+          />
+        </section>
+
+        <section class="column animate fade-up">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <p
+              style="
+                font-size: 25px;
+                font-family: 'Libertinus Serif';
+                font-style: italic;
+                font-weight: normal;
+              "
+            >
+              inviteu.io
+            </p>
+            <div class="social animate fade-down">
+              <a href="https://t.me/inviteuio">
+                <img
+                  style="width: 30px; height: 30px"
+                  src="images/telegram.png"
+                  alt="telegram"
+                />
+              </a>
+              <a href="https://www.instagram.com/inviteu_io/">
+                <img
+                  style="width: 30px; height: 30px"
+                  src="images/instagram.png"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
