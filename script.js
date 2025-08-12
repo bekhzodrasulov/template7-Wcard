@@ -46,7 +46,7 @@ playButton.addEventListener("click", () => {
 });
 
 function updateCountdown() {
-  const weddingDate = new Date("2025-08-24T09:00:00");
+  const weddingDate = new Date("2025-09-31T19:00:00");
   const now = new Date();
   const diff = weddingDate - now;
 
@@ -72,7 +72,7 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-if (!/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+/* if (!/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
   document.body.innerHTML = `
       <div style="text-align:center; padding: 50px; font-family: sans-serif;">
         <h2>Faqat mobil qurilmalardan kirish mumkin 📱</h2>
@@ -84,4 +84,4 @@ if (!/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
         <a href="https://t.me/inviteuio">inviteu.io</a>
       </div>
     `;
-}
+} */
