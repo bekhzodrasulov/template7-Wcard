@@ -51,10 +51,10 @@ function updateCountdown() {
   const diff = weddingDate - now;
 
   if (diff <= 0) {
-    document.getElementById("days").textContent = 0;
-    document.getElementById("hours").textContent = 0;
-    document.getElementById("minutes").textContent = 0;
-    document.getElementById("seconds").textContent = 0;
+    document.getElementById("days").textContent = Number(0);
+    document.getElementById("hours").textContent = Number(0);
+    document.getElementById("minutes").textContent = Number(0);
+    document.getElementById("seconds").textContent = Number(0);
     return;
   }
 
@@ -63,10 +63,10 @@ function updateCountdown() {
   const minutes = Math.floor((diff / 1000 / 60) % 60);
   const seconds = Math.floor((diff / 1000) % 60);
 
-  document.getElementById("days").textContent = days;
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
+  document.getElementById("days").textContent = Number(days);
+  document.getElementById("hours").textContent = Number(hours);
+  document.getElementById("minutes").textContent = Number(minutes);
+  document.getElementById("seconds").textContent = Number(seconds);
 }
 
 setInterval(updateCountdown, 1000);
